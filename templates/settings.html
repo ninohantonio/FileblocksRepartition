@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2><i class="fa-solid fa-gear"></i> Settings</h2>
+<form method="post" action="{{ url_for('update_block_size') }}" class="card p-4 shadow-sm">
+    <div class="mb-3">
+        <label for="block_size" class="form-label">Block Size (MB)</label>
+        <input type="number" class="form-control" name="block_size" id="block_size" min="1" max="100" value="{{ settings.block_size }}" required>
+    </div>
+    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> Update Block Size</button>
+</form>
+{% endblock %} 

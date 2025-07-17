@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2><i class="fa-solid fa-plus"></i> Add Machine</h2>
+<form method="post" class="card p-4 shadow-sm">
+    <div class="mb-3">
+        <label for="name" class="form-label">Machine Name</label>
+        <input type="text" class="form-control" name="name" id="name" required>
+    </div>
+    <div class="mb-3">
+        <label for="url" class="form-label">Machine URL</label>
+        <input type="text" class="form-control" name="url" id="url" required>
+    </div>
+    <div class="mb-3">
+        <label for="storage_path" class="form-label">Storage Path</label>
+        <input type="text" class="form-control" name="storage_path" id="storage_path" required>
+    </div>
+    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Machine</button>
+</form>
+{% endblock %} 
